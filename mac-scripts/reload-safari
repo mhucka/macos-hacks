@@ -1,10 +1,11 @@
 #!/bin/sh
-# =============================================================================
+#──────────────────────────────────────────────────────────────────────────────
 # @file    reload-safari
 # @brief   Tell Safari to refresh the current tab
-# @author  Michael Hucka (mhucka@caltech.edu), Caltech
-# @license Please see the file LICENSE.md in the parent directory
-# =============================================================================
+# @author  Michael Hucka <mhucka@caltech.edu>
+# @license Please see the file LICENSE in the project directory
+# @website https://github.com/mhucka/mac-scripts
+#──────────────────────────────────────────────────────────────────────────────
 #
 # This reloads whatever is in Safari's front-most window or tab but doesn't
 # switch focus to it.  This script is useful when used in conjunction with

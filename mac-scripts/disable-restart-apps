@@ -1,12 +1,14 @@
 #!/bin/bash
-# =============================================================================
+#──────────────────────────────────────────────────────────────────────────────
 # @file    disable-restart-apps
 # @brief   Prevent macOS from restarting apps after a crash
 # @created 2021-03-06
+# @license Please see the file named LICENSE in the project directory
+# @website https://github.com/mhucka/mac-scripts
 #
 # This is based on the answer posted by user "patrick fogarty" on 2021-01-17
 # to Apple.StackExchange.com at https://apple.stackexchange.com/a/411447
-# =============================================================================
+#──────────────────────────────────────────────────────────────────────────────
 
 # Figure out the appropriate plist file.
 uuid=$(ioreg -rd1 -c IOPlatformExpertDevice | awk -F'"' '/IOPlatformUUID/{print $4}')

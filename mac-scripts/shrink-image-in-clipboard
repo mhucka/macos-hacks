@@ -1,8 +1,14 @@
 #!/bin/bash
-# =============================================================================
+#──────────────────────────────────────────────────────────────────────────────
+# @file    shrink-image-in-clipboard
+# @brief   Shrink by a factor of 1/2 whatever image is in the macOS clipboard
+# @created 2021-03-06
+# @license Please see the file named LICENSE in the project directory
+# @website https://github.com/mhucka/mac-scripts
+
 # This code was originally based on a posting by "JustinParker" on 2014-05-02
 # to Apple Stack Exchange: https://apple.stackexchange.com/a/129428/6489
-# =============================================================================
+#──────────────────────────────────────────────────────────────────────────────
 
 TMPFILE=$(mktemp /tmp/corsproxy.XXXXXX)
 trap 'rm -f -- "$TMPFILE"' INT TERM HUP EXIT

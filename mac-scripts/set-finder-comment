@@ -1,4 +1,5 @@
 #!/bin/bash
+#──────────────────────────────────────────────────────────────────────────────
 # @file    set-finder-comment
 # @brief   Set the Finder comment to the given string
 # @author  Michael Hucka <mhucka@caltech.edu>
@@ -7,6 +8,7 @@
 #
 # Originally based on code posted by user l'L'l to Stack Overflow on 2017-05-19
 # at https://stackoverflow.com/a/42890648/743730
+#──────────────────────────────────────────────────────────────────────────────
 
 version_number="1.0.0"
 website="https://github.com/mhucka/small-scripts/mac-scripts"
