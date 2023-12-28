@@ -1,11 +1,11 @@
 {
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
-  "name": "FULL REPOSITORY NAME",
-  "identifier": "REPONAME",
-  "description": "DESCRIPTION",
-  "version": "0.0.0",
-  "datePublished": "2023-12-14",
+  "name": "(Some of) Mike's little scripts for macOS",
+  "identifier": "mac-scripts",
+  "description": "A collection of  macOS-specific short scripts for a variety of purposes.",
+  "version": "0.0.2",
+  "datePublished": "2023-12-28",
   "dateCreated": "2023-12-11",
   "author": [
     {
@@ -47,14 +47,14 @@
     }
   ],
   "copyrightYear": 2023,
-  "license": "https://github.com/mhucka/REPONAME/blob/master/LICENSE",
+  "license": "https://github.com/mhucka/mac-scripts/blob/master/LICENSE",
   "isAccessibleForFree": true,
   "url": "",
-  "codeRepository": "https://github.com/mhucka/REPONAME",
-  "readme": "https://github.com/mhucka/REPONAME/blob/main/README.md",
-  "releaseNotes": "https://github.com/mhucka/REPONAME/blob/main/CHANGES.md",
-  "issueTracker": "https://github.com/mhucka/REPONAME/issues",
-  "downloadUrl": "https://github.com/mhucka/REPONAME/archive/master.zip",
+  "codeRepository": "https://github.com/mhucka/mac-scripts",
+  "readme": "https://github.com/mhucka/mac-scripts/blob/main/README.md",
+  "releaseNotes": "https://github.com/mhucka/mac-scripts/blob/main/CHANGES.md",
+  "issueTracker": "https://github.com/mhucka/mac-scripts/issues",
+  "downloadUrl": "https://github.com/mhucka/mac-scripts/archive/master.zip",
   "keywords": [
     "software"
   ],
