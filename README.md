@@ -3,7 +3,6 @@
 A collection of  macOS-specific short scripts for a variety of purposes.  You are welcome to copy and use as you see fit.
 
 [![License](https://img.shields.io/badge/License-BSD--like-lightgrey.svg?style=flat-square)](https://choosealicense.com/licenses/bsd-3-clause)
-[![Latest release](https://img.shields.io/github/v/release/mhucka/mac-scripts.svg?style=flat-square&color=b44e88)](https://github.com/mhucka/mac-scripts/releases)
 
 
 ## Table of contents
