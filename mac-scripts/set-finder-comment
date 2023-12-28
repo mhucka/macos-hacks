@@ -1,0 +1,72 @@
+#!/bin/bash
+# @file    set-finder-comment
+# @brief   Set the Finder comment to the given string
+# @author  Michael Hucka <mhucka@caltech.edu>
+# @license Please see the file LICENSE in the repository containing this file.
+# @repo    https://github.com/mhucka/small-scripts
+#
+# Originally based on code posted by user l'L'l to Stack Overflow on 2017-05-19
+# at https://stackoverflow.com/a/42890648/743730
+
+version_number="1.0.0"
+website="https://github.com/mhucka/small-scripts/mac-scripts"
+program=${0##*/}
+
+
+# Helper functions.
+# .............................................................................
+
+print_usage() {
+cat <<EOF >&2
+Usage:
+    $program PATH COMMENT
+
+This takes two arguments: the path to a file, and a comment string.
+It sets the Finder comment of the file to the given string.
+
+Options:
+    -h, --help          Print this help message and exit.
+    -v, --version       Display the current version number and exit.
+EOF
+}
+
+print_version() {
+    echo "Version: $program $version_number" 1>&2
+    echo "Author:  Mike Hucka <mhucka@caltech.edu>" 1>&2
+    echo "Website: $website" 1>&2
+}
+
+print_error() {
+    echo "$@" 1>&2
+}
+
+set_finder_comment () {
+osascript -e "set fp to POSIX file \"$1\"" \
+          -e "set f to fp as alias" \
+          -e "tell application \"Finder\" to set the comment of f to \"$2\""
+}
+
+
+# Main.
+# .............................................................................
+
+if [[ $1 == "-h" || $1 == "--help" ]]; then
+    print_usage
+    exit 0
+elif [[ $1 == "-V" || $1 == "--version" ]]; then
+    print_version
+    exit 0
+elif [[ $# -lt 2 ]]; then
+    print_usage
+    exit 2
+fi
+
+path="$1"
+comment="$2"
+
+if [[ ! -e "$path" ]]; then
+    print_error File not found: $path
+    exit 1
+fi
+
+set_finder_comment "$1" "$2"
