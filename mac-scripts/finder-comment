@@ -12,7 +12,7 @@
 
 # Program identification ......................................................
 
-declare -r version_number="0.0.1"
+declare -r version_number="0.0.2"
 declare -r website="https://github.com/mhucka/mac-scripts"
 declare -r program=${0##*/}
 
@@ -144,13 +144,15 @@ get_comment() {
 }
 
 set_comment () {
-    output=$(osascript -s -o \
+    output=$(osascript -s o \
                        -e "set fp to POSIX file \"$1\"" \
                        -e "set f to fp as alias" \
                        -e "tell application \"Finder\" to set the comment of f to \"$2\"")
     if [[ $output != $2 ]]; then
         alert "warning" "Unexpected message from Finder: $output"
         exit 1
+    else
+        mdimport -i $file
     fi
 }
 
@@ -161,6 +163,8 @@ delete_comment() {
     if [[ $output != "missing value" ]]; then
         alert "warning" "Unexpected message from Finder: $output"
         exit 1
+    else
+        mdimport -i $file
     fi
 }
 
@@ -168,10 +172,13 @@ delete_comment() {
 
 parse_args "$@"
 
+# Sanity check: does the file actually exist?
 if [[ ! -e $file ]]; then
     alert "error" "file not found: $file"
     exit 1
-elif [[ $overwrite == "false" && $delete == "false" && $set == "false" ]]; then
+
+# File exists. Take action based on the options given.
+if [[ $overwrite == "false" && $delete == "false" && $set == "false" ]]; then
     # Default action with no arguments is to print the Finder comment.
     comment=$(get_comment $file)
     if [[ $comment != "" ]]; then
