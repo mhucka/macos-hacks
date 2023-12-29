@@ -1,14 +1,9 @@
 #!/bin/bash
-#──────────────────────────────────────────────────────────────────────────────
 # @file    finder-comment
 # @brief   Manipulate the Finder comment of a file
 # @author  Michael Hucka <mhucka@caltech.edu>
 # @license Please see the file LICENSE in the repository containing this file.
-# @repo    https://github.com/mhucka/small-scripts
-#
-# Originally based on code posted by user l'L'l to Stack Overflow on 2017-05-19
-# at https://stackoverflow.com/a/42890648/743730
-#──────────────────────────────────────────────────────────────────────────────
+# @repo    https://github.com/mhucka/mac-scripts
 
 # Program identification ......................................................
 
