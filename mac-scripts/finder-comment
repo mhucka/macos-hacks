@@ -7,13 +7,13 @@
 
 # Program identification ......................................................
 
-declare -r version_number="0.0.3"
+declare -r version_number="0.0.4"
 declare -r website="https://github.com/mhucka/mac-scripts"
 declare -r program=${0##*/}
 
 # Global configuration ........................................................
 
-set -o errexit -o nounset -o pipefail
+set -o nounset -o pipefail
 shopt -s nullglob
 shopt -s nocasematch
 
@@ -68,18 +68,18 @@ print_version() {
 }
 
 alert() {
-    local alert_type="$1"
+    local kind="$1"
     shift
     local msg=$*
 
-    if [[ $alert_type =~ "warning" && $quiet == "true" ]]; then
+    if [[ $kind =~ "warning" && $quiet == "true" ]]; then
         return
     fi
 
     # Uppercase the first letters of the type and message.
-    alert_type="$(tr '[a-z]' '[A-Z]' <<< ${alert_type:0:1})${alert_type:1}"
+    kind="$(tr '[a-z]' '[A-Z]' <<< ${kind:0:1})${kind:1}"
     msg="$(tr '[a-z]' '[A-Z]' <<< ${msg:0:1})${msg:1}"
-    echo -e "[$alert_type] $msg" 1>&2
+    echo -e "[$kind] $msg" 1>&2
 }
 
 parse_args() {
@@ -128,34 +128,64 @@ parse_args() {
     fi
 }
 
+# To create an AppleScript inside a Bash script, then pass that to
+# osascript, all the while handling file paths that have embedded spaces
+# and other special characters in them ... is not easy. The crazy shit
+# below is the result of a lot of trial and error.
+
 get_comment() {
-    osascript -s o \
-              -e "set f to (POSIX FILE \"$1\" as alias)" \
-              -e "tell application \"Finder\" to return comment of f"
+    local path=$1
+    local line1 line2 line3
+
+    read -r -d '' line1 <<EOF
+set _path to POSIX file "$path"
+EOF
+    line2="set _file to _path as alias"
+    line3="tell application \"Finder\" to return comment of _file"
+
+    output=$(osascript -e "$line1" -e "$line2" -e "$line3")
+    echo "$output"
 }
 
 set_comment () {
-    output=$(osascript -s o \
-                       -e "set fp to POSIX file \"$1\"" \
-                       -e "set f to fp as alias" \
-                       -e "tell application \"Finder\" to set the comment of f to \"$2\"")
-    if [[ $output != $2 ]]; then
-        alert "warning" "Unexpected message from Finder: $output"
+    local path=$1
+    local comment=$2
+    local line1 line2 line3
+
+    read -r -d '' line1 <<EOF
+set _path to POSIX file "$path"
+EOF
+    line2="set _file to _path as alias"
+    read -r -d '' line3 <<EOF
+tell application "Finder" to set the comment of _file to "$comment"
+EOF
+
+    output=$(osascript -e "$line1" -e "$line2" -e "$line3")
+    if [[ $output != $comment ]]; then
+        alert "error" "Unexpected message from Finder: $output"
         exit 1
     else
-        mdimport -i $file
+        mdimport -i "$path"
     fi
 }
 
 delete_comment() {
-    output=$(osascript -s o \
-                       -e "set f to (POSIX FILE \"$1\" as alias)" \
-                       -e "tell application \"Finder\" to set the comment of f to (missing value)")
+    local path=$1
+    local line1 line2 line3 line4
+
+    read -r -d '' line1 <<EOF
+set _path to POSIX file "$path"
+EOF
+    line2="set _file to _path as alias"
+    line3="set _empty to (missing value)"
+    line4="tell application \"Finder\" to set the comment of _file to _empty"
+
+    output=$(osascript -e "$line1" -e "$line2" -e "$line3" -e "$line4")
     if [[ $output != "missing value" ]]; then
-        alert "warning" "Unexpected message from Finder: $output"
+        alert "error" "Unexpected message from Finder: $output"
         exit 1
     else
-        mdimport -i $file
+        mdimport -i "$path"
     fi
 }
 
@@ -172,24 +202,24 @@ fi
 # File exists. Take action based on the options given.
 if [[ $overwrite == "false" && $delete == "false" && $set == "false" ]]; then
     # Default action with no arguments is to print the Finder comment.
-    comment=$(get_comment $file)
+    comment=$(get_comment "$file")
     if [[ $comment != "" ]]; then
         echo $comment
     else
         alert "warning" "Finder comment is empty"
     fi
 elif [[ $delete == "true" ]]; then
-    delete_comment $file
+    delete_comment "$file"
 elif [[ $set == "true" && -z $text ]]; then
     alert "error" "use the -d option to delete comments"
     exit 2
 elif [[ -n $text ]]; then
-    existing_comment=$(get_comment $file)
+    existing_comment=$(get_comment "$file")
     if [[ -n $existing_comment && $overwrite == "false" ]]; then
         alert "error" "will not overwrite existing comment without -o option"
         exit 2
     fi
-    set_comment $file $text
+    set_comment "$file" "$text"
 fi
 
 # If we get here, all went well and we return a normal exit code.
