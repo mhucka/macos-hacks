@@ -171,6 +171,7 @@ parse_args "$@"
 if [[ ! -e $file ]]; then
     alert "error" "file not found: $file"
     exit 1
+fi
 
 # File exists. Take action based on the options given.
 if [[ $overwrite == "false" && $delete == "false" && $set == "false" ]]; then
