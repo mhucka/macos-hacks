@@ -40,8 +40,6 @@ print_version() {
 }
 
 parse_args() {
-    # Parse comand-line options.
-
     while [ $# -gt 0 ]; do
         case $1 in
             -h | --help )
@@ -49,7 +47,6 @@ parse_args() {
                 exit 0
                 ;;
             -v | --version )
-                chatty=0
                 print_version
                 exit 0
                 ;;
@@ -61,8 +58,6 @@ parse_args() {
         shift
     done
 }
-
-
 
 reload_safari() {
     osascript <<EOF
