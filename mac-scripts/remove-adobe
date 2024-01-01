@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
-#──────────────────────────────────────────────────────────────────────────────
-# @file    remove-adobe
-# @brief   Stop the fucking Adobe Creative Cloud daemons on macOS
-# @created 2021-09-17
-# @license Please see the file named LICENSE in the project directory
-# @website https://github.com/mhucka/small-scripts
+# Summary: Stop the fucking Adobe Creative Cloud daemons on macOS.
+#
+# Copyright (C) 2024 Michael Hucka.
+# License: Modified BSD 3-Clause – see file "LICENSE" in the project website.
+# Website: https://github.com/mhucka/mac-scripts
 #
 # I find Adobe Creative Cloud absolutely infuriating. It installs auto
 # launchers that are not in the user's login app list, and the services are
@@ -13,7 +12,6 @@
 #
 # USE AT YOUR OWN RISK. I'm not responsible for anthing that may happen if
 # you use this.
-#──────────────────────────────────────────────────────────────────────────────
 
 for file in {,~}/Library/{LaunchAgents,LaunchDaemons}/com.adobe.*; do
   sudo launchctl unload -w $file  > /dev/null 2>&1

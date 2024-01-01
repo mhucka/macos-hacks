@@ -1,11 +1,9 @@
 #!/bin/sh
-#──────────────────────────────────────────────────────────────────────────────
-# @file    interm
-# @brief   Pause or continue Spotlight
-# @author  Michael Hucka <mhucka@caltech.edu>
-# @license Please see the file LICENSE in the project directory
-# @website https://github.com/mhucka/mac-scripts
-#──────────────────────────────────────────────────────────────────────────────
+# Summary: Pause or continue Spotlight.
+#
+# Copyright (C) 2024 Michael Hucka.
+# License: Modified BSD 3-Clause – see file "LICENSE" in the project website.
+# Website: https://github.com/mhucka/mac-scripts
 
 CMD="unload"
 while [ $# -gt 0 ]; do

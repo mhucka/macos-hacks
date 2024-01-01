@@ -1,7 +1,6 @@
-# @file    .gitattributes
-# @brief   Repository-specific file attribute associations
-# @license Please see the file named LICENSE in the project directory
-# @website https://github.com/mhucka/mac-scripts
+# Copyright (C) 2024 Michael Hucka.
+# License: Modified BSD 3-Clause – see file "LICENSE" in the project website.
+# Website: https://github.com/mhucka/mac-scripts
 
 # Default interpretation of files, in case people don't have core.autocrlf set.
 # .............................................................................

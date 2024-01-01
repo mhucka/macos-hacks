@@ -1,11 +1,8 @@
 #!/bin/sh
-#──────────────────────────────────────────────────────────────────────────────
-# @file    swit
-# @brief   Tell iTerm to cd to a given directory.
-# @author  Michael Hucka <mhucka@caltech.edu>
-# @license Please see the file LICENSE in the project directory
-# @website https://github.com/mhucka/mac-scripts
-#──────────────────────────────────────────────────────────────────────────────
+# Summary: Tell iTerm to cd to a given directory.
+# Copyright (C) 2024 Michael Hucka.
+# License: Modified BSD 3-Clause – see file "LICENSE" in the project website.
+# Website: https://github.com/mhucka/mac-scripts
 #
 # This script is useful when you're running a shell somewhere other than
 # iTerm (as for example, in Emacs) and then want to switch to iTerm in that

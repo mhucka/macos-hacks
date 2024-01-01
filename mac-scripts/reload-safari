@@ -1,18 +1,13 @@
 #!/bin/sh
-#──────────────────────────────────────────────────────────────────────────────
-# @file    reload-safari
-# @brief   Tell Safari to refresh the current tab
-# @author  Michael Hucka <mhucka@caltech.edu>
-# @license Please see the file LICENSE in the project directory
-# @website https://github.com/mhucka/mac-scripts
-#──────────────────────────────────────────────────────────────────────────────
+# Summary: Tell Safari to refresh the current tab.
 #
 # This reloads whatever is in Safari's front-most window or tab but doesn't
 # switch focus to it.  This script is useful when used in conjunction with
 # something like 'entr' or 'fswatch' to watch a file or directory.
 #
-# JavaScript code originally from
-# https://discussions.apple.com/message/24389284#24389284
+# Copyright (C) 2024 Michael Hucka.
+# License: Modified BSD 3-Clause – see file "LICENSE" in the project website.
+# Website: https://github.com/mhucka/mac-scripts
 
 version_number="1.0.0"
 website="https://github.com/mhucka/small-scripts/mac-scripts"
@@ -58,6 +53,9 @@ parse_args() {
         shift
     done
 }
+
+# JavaScript code originally from
+# https://discussions.apple.com/message/24389284#24389284
 
 reload_safari() {
     osascript <<EOF
