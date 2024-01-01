@@ -56,7 +56,12 @@
   "issueTracker": "https://github.com/mhucka/mac-scripts/issues",
   "downloadUrl": "https://github.com/mhucka/mac-scripts/archive/master.zip",
   "keywords": [
-    "software"
+    "software",
+    "command line",
+    "macOS",
+    "shell",
+    "Bash",
+    "AppleScript"
   ],
   "developmentStatus": "active"
 }

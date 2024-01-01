@@ -4,13 +4,18 @@ title: Mike's miscellaneous small scripts for macOS
 authors:
   - family-names: Hucka
     given-names: Michael
+    email: mhucka@caltech.edu
     orcid: https://orcid.org/0000-0001-9105-5960
 abstract: Template repository for software projects
-repository-code: "https://github.com/mhucka/mac-scripts"
 type: software
-version: 0.0.2
+repository-code: "https://github.com/mhucka/mac-scripts"
 license-url: "https://github.com/mhucka/mac-scripts/blob/main/LICENSE"
-keywords:
-  - template
-  - software
+version: 0.0.2
 date-released: 2023-12-28
+keywords:
+  - software
+  - macOS
+  - command line
+  - Bash
+  - AppleScript
+  - Shell
