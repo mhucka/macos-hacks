@@ -1,8 +1,8 @@
 #!/bin/bash
 # Summary: Shrink by a factor of 1/2 whatever image is in the macOS clipboard.
 #
-# Copyright (C) 2024 Michael Hucka.
-# License: Modified BSD 3-Clause – see file "LICENSE" in the project website.
+# Copyright 2024 Michael Hucka.
+# License: MIT License – see file "LICENSE" in the project website.
 # Website: https://github.com/mhucka/mac-scripts
 
 # This code was originally based on a posting by "JustinParker" on 2014-05-02

@@ -1,8 +1,8 @@
 #!/bin/sh
 # Summary: Pause or continue Spotlight.
 #
-# Copyright (C) 2024 Michael Hucka.
-# License: Modified BSD 3-Clause – see file "LICENSE" in the project website.
+# Copyright 2024 Michael Hucka.
+# License: MIT License – see file "LICENSE" in the project website.
 # Website: https://github.com/mhucka/mac-scripts
 
 CMD="unload"

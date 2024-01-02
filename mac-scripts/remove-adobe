@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Summary: Stop the fucking Adobe Creative Cloud daemons on macOS.
 #
-# Copyright (C) 2024 Michael Hucka.
-# License: Modified BSD 3-Clause – see file "LICENSE" in the project website.
+# Copyright 2024 Michael Hucka.
+# License: MIT License – see file "LICENSE" in the project website.
 # Website: https://github.com/mhucka/mac-scripts
 #
 # I find Adobe Creative Cloud absolutely infuriating. It installs auto

@@ -1,7 +1,8 @@
 #!/bin/sh
-# Summary: Tell iTerm to cd to a given directory.
-# Copyright (C) 2024 Michael Hucka.
-# License: Modified BSD 3-Clause – see file "LICENSE" in the project website.
+# Summary: Tell iTerm2 to cd to a given directory.
+#
+# Copyright 2024 Michael Hucka.
+# License: MIT License – see file "LICENSE" in the project website.
 # Website: https://github.com/mhucka/mac-scripts
 #
 # This script is useful when you're running a shell somewhere other than

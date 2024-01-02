@@ -1,9 +1,9 @@
 #!/bin/bash
 # Summary: add/view/delete the macOS Finder comment value of a file.
 #
-# Copyright (C) 2024 Michael Hucka.
-# License: Modified BSD 3-Clause – see file "LICENSE" in the project website.
-# Website: https://github.com/mhucka/template
+# Copyright 2024 Michael Hucka.
+# License: MIT License – see file "LICENSE" in the project website.
+# Website: https://github.com/mhucka/mac-scripts
 
 # Program identification ......................................................
 

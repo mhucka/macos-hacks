@@ -4,8 +4,8 @@
   "name": "(Some of) Mike's little scripts for macOS",
   "identifier": "mac-scripts",
   "description": "A collection of  macOS-specific short scripts for a variety of purposes.",
-  "version": "0.0.2",
-  "datePublished": "2023-12-28",
+  "version": "0.0.3",
+  "datePublished": "2024-01-02",
   "dateCreated": "2023-12-11",
   "author": [
     {
@@ -46,7 +46,7 @@
       "@id": "https://orcid.org/0000-0001-9105-5960"
     }
   ],
-  "copyrightYear": 2023,
+  "copyrightYear": 2024,
   "license": "https://github.com/mhucka/mac-scripts/blob/master/LICENSE",
   "isAccessibleForFree": true,
   "url": "",

@@ -50,7 +50,7 @@ Your help and participation in enhancing this software is welcome!  Please visit
 
 ## License
 
-This software is Copyright (C) 2023–2024, by Michael Hucka and the California Institute of Technology (Pasadena, California, USA).  This software is freely distributed under a 3-clause BSD type license.  Please see the [LICENSE](LICENSE) file for more information.
+This software is Copyright 2023–2024, by Michael Hucka.  This software is freely distributed under the MIT License.  Please see the [LICENSE](LICENSE) file for more information.
 
 
 ## Authors and history
