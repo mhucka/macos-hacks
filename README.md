@@ -2,7 +2,7 @@
 
 A collection of  macOS-specific short scripts for a variety of purposes.  You are welcome to copy and use as you see fit.
 
-[![License](https://img.shields.io/badge/License-BSD--like-lightgrey.svg?style=flat-square)](https://choosealicense.com/licenses/bsd-3-clause)
+[![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat-square)](https://github.com/mhucka/mac-scripts/blob/master/LICENSE)
 
 
 ## Table of contents
@@ -14,8 +14,6 @@ A collection of  macOS-specific short scripts for a variety of purposes.  You ar
 * [Getting help](#getting-help)
 * [Contributing](#contributing)
 * [License](#license)
-* [Authors and history](#authors-and-history)
-* [Acknowledgments](#acknowledgments)
 
 
 ## Introduction
@@ -51,13 +49,3 @@ Your help and participation in enhancing this software is welcome!  Please visit
 ## License
 
 This software is Copyright 2023–2024, by Michael Hucka.  This software is freely distributed under the MIT License.  Please see the [LICENSE](LICENSE) file for more information.
-
-
-## Authors and history
-
-In this section, list the authors and contributors to your software project.  Adding additional notes here about the history of the project can make it more interesting and compelling.  This is also a place where you can acknowledge other contributions to the work and the use of other people's software or tools.
-
-
-## Acknowledgments
-
-This work is a personal project developed by the author, using computing facilities and other resources of the [California Institute of Technology Library](https://www.library.caltech.edu).
