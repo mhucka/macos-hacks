@@ -10,7 +10,7 @@
 # same directory.
 
 version_number="1.0.2"
-website="https://github.com/mhucka/small-scripts/mac-scripts"
+website="https://github.com/mhucka/mac-scripts"
 
 print_usage() {
 cat <<EOF >&2
