@@ -18,7 +18,7 @@ A collection of  macOS-specific short scripts for a variety of purposes.  You ar
 
 ## Introduction
 
-This is a collection of short scripts, written in a variety of programming languages and for a variety of purposes.  You are welcome to copy and use them as you see fit.  If you discover problems or can think of improvements, please me know, either using GitHub's commenting system, or a pull request, or directly via email ([mhucka@caltech.edu](mhucka@caltech.edu)).  These scripts are distributed under a BSD open-source license.
+This is a collection of short scripts, written in a variety of programming languages and for a variety of purposes.  You are welcome to copy and use them as you see fit.  If you discover problems or can think of improvements, please me know, either using GitHub's commenting system, or a pull request, or directly via email ([mhucka@caltech.edu](mhucka@caltech.edu)).  These scripts are distributed under the terms of the [MIT license](LICENSE).
 
 
 ## Installation
