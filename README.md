@@ -2,7 +2,7 @@
 
 A collection of  macOS-specific short scripts for a variety of purposes.  You are welcome to copy and use as you see fit.
 
-[![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat-square)](https://github.com/mhucka/mac-scripts/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat-square)](https://github.com/mhucka/mac-scripts/blob/main/LICENSE)
 
 
 ## Table of contents
