@@ -1,10 +1,10 @@
 {
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
-  "name": "(Some of) Mike's little scripts for macOS",
-  "identifier": "mac-scripts",
-  "description": "A collection of macOS-specific short scripts for a variety of purposes.",
-  "datePublished": "2024-01-16",
+  "name": "(Some of) Mike's hacks for macOS",
+  "identifier": "macos-hacks",
+  "description": "A collection of macOS-specific hacks for a variety of purposes.",
+  "datePublished": "2024-02-18",
   "dateCreated": "2023-12-11",
   "author": [
     {
@@ -46,14 +46,14 @@
     }
   ],
   "copyrightYear": 2024,
-  "license": "https://github.com/mhucka/mac-scripts/blob/main/LICENSE",
+  "license": "https://github.com/mhucka/macos-hacks/blob/main/LICENSE",
   "isAccessibleForFree": true,
-  "url": "",
-  "codeRepository": "https://github.com/mhucka/mac-scripts",
-  "readme": "https://github.com/mhucka/mac-scripts/blob/main/README.md",
-  "releaseNotes": "https://github.com/mhucka/mac-scripts/blob/main/CHANGES.md",
-  "issueTracker": "https://github.com/mhucka/mac-scripts/issues",
-  "downloadUrl": "https://github.com/mhucka/mac-scripts/archive/main.zip",
+  "url": "https://github.com/mhucka/macos-hacks",
+  "codeRepository": "https://github.com/mhucka/macos-hacks",
+  "readme": "https://github.com/mhucka/macos-hacks/blob/main/README.md",
+  "releaseNotes": "https://github.com/mhucka/macos-hacks/blob/main/CHANGES.md",
+  "issueTracker": "https://github.com/mhucka/macos-hacks/issues",
+  "downloadUrl": "https://github.com/mhucka/macos-hacks/archive/main.zip",
   "keywords": [
     "software",
     "command line",

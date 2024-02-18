@@ -1,8 +1,8 @@
-# (Some of) Mike's little scripts for macOS
+# (Some of) Mike's macOS hacks
 
-A collection of  macOS-specific short scripts for a variety of purposes.  You are welcome to copy and use as you see fit.
+A collection of  macOS-specific things for a variety of purposes.  You are welcome to copy and use as you see fit.
 
-[![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat-square)](https://github.com/mhucka/mac-scripts/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat-square)](https://github.com/mhucka/macos-hacks/blob/main/LICENSE)
 
 
 ## Table of contents
@@ -18,7 +18,9 @@ A collection of  macOS-specific short scripts for a variety of purposes.  You ar
 
 ## Introduction
 
-This is a collection of short scripts, written in a variety of programming languages and for a variety of purposes.  You are welcome to copy and use them as you see fit.  If you discover problems or can think of improvements, please me know, either using GitHub's commenting system, or a pull request, or directly via email ([mhucka@caltech.edu](mhucka@caltech.edu)).  These scripts are distributed under the terms of the [MIT license](LICENSE).
+This is a collection of short scripts and other things, written in a variety of programming languages and for a variety of purposes.  You are welcome to copy and use them as you see fit.  If you discover problems or can think of improvements, please me know, either using GitHub's commenting system, or a pull request, or directly via email ([mhucka@caltech.edu](mhucka@caltech.edu)).  These scripts are distributed under the terms of the [MIT license](LICENSE).
+
+Note that they are perpetually under undevelopment.
 
 
 ## Installation
@@ -38,12 +40,12 @@ These are not polished programs. They may be buggy. They may be out of date. I m
 
 ## Getting help
 
-If you find an issue, please submit it in [the GitHub issue tracker](https://github.com/mhucka/mac-scripts/issues) for this repository.
+If you find an issue, please submit it in [the GitHub issue tracker](https://github.com/mhucka/macos-hacks/issues) for this repository.
 
 
 ## Contributing
 
-Your help and participation in enhancing this software is welcome!  Please visit the [guidelines for contributing](https://github.com/mhucka/mac-scripts/blob/main/CONTRIBUTING.md) for some tips on getting started.
+Your help and participation in enhancing this software is welcome!  Please visit the [guidelines for contributing](https://github.com/mhucka/macos-hacks/blob/main/CONTRIBUTING.md) for some tips on getting started.
 
 
 ## License

@@ -1,4 +1,10 @@
-# Change log for mac-scripts
+# Change log for macos-hacks
+
+## 2024-02-18
+
+* Changed the name from `mac-scripts` to `macos-hacks`.
+* Added subdirectory `quartz-filters` with a Quartz Filter that tries to shrink PDF files.
+
 
 ## 2024-01-10
 

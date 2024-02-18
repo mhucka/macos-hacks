@@ -5,10 +5,10 @@ authors:
     given-names: Michael
     email: mhucka@caltech.edu
     orcid: https://orcid.org/0000-0001-9105-5960
-title: Mike's miscellaneous small scripts for macOS
-abstract: A collection of macOS-specific short scripts for a variety of purposes.
-date-released: 2024-01-16
-repository-code: "https://github.com/mhucka/mac-scripts"
+title: Some of Mike's macOS scripts and other hacks
+abstract: A collection of macOS-specific hacks for a variety of purposes.
+date-released: 2024-02-18
+repository-code: "https://github.com/mhucka/macos-hacks"
 license: MIT
 type: software
 keywords:
