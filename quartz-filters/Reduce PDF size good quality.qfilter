@@ -34,6 +34,6 @@
 	<key>FilterType</key>
 	<integer>1</integer>
 	<key>Name</key>
-	<string>Reduce size maintaining googd quality</string>
+	<string>Reduce PDF size good quality</string>
 </dict>
 </plist>
