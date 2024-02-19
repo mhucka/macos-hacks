@@ -1,7 +1,7 @@
 Support
 =======
 
-Thank you for your interest in this project.  If you are experiencing problems or have questions, the following are the preferred methods of reaching someone:
+Thank you for your interest in this project. If you are experiencing problems or have questions, the following are the preferred methods of reaching someone:
 
 1. Report a new issue using the [issue tracker](https://github.com/mhucka/macos-hacks/issues).
 2. Send email to the primary maintainer: [mhucka@caltech.edu](mhucka@caltech.edu).

@@ -1,6 +1,6 @@
 # (Some of) Mike's macOS hacks
 
-A collection of  macOS-specific things for a variety of purposes.  You are welcome to copy and use as you see fit.
+A collection of  macOS-specific things for a variety of purposes. You are welcome to copy and use as you see fit.
 
 [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat-square)](https://github.com/mhucka/macos-hacks/blob/main/LICENSE)
 
@@ -18,14 +18,14 @@ A collection of  macOS-specific things for a variety of purposes.  You are welco
 
 ## Introduction
 
-This is a collection of short scripts and other things, written in a variety of programming languages and for a variety of purposes.  You are welcome to copy and use them as you see fit.  If you discover problems or can think of improvements, please me know, either using GitHub's commenting system, or a pull request, or directly via email ([mhucka@caltech.edu](mhucka@caltech.edu)).  These scripts are distributed under the terms of the [MIT license](LICENSE).
+This is a collection of short scripts and other things, written in a variety of programming languages and for a variety of purposes. You are welcome to copy and use them as you see fit. If you discover problems or can think of improvements, please me know, either using GitHub's commenting system, or a pull request, or directly via email ([mhucka@caltech.edu](mhucka@caltech.edu)). These scripts are distributed under the terms of the [MIT license](LICENSE).
 
 Note that they are perpetually under undevelopment.
 
 
 ## Installation
 
-Copy the scripts to somewhere on your computer.  You can do this by cloning this repo, or copying individual files that you find by browsing this repository on GitHub.
+Copy the scripts to somewhere on your computer. You can do this by cloning this repo, or copying individual files that you find by browsing this repository on GitHub.
 
 
 ## Usage
@@ -50,4 +50,4 @@ Your help and participation in enhancing this software is welcome!  Please visit
 
 ## License
 
-This software is Copyright 2023–2024, by Michael Hucka.  This software is freely distributed under the MIT License.  Please see the [LICENSE](LICENSE) file for more information.
+This software is Copyright 2023–2024, by Michael Hucka. This software is freely distributed under the MIT License. Please see the [LICENSE](LICENSE) file for more information.
