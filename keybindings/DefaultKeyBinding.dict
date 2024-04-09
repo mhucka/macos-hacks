@@ -1,0 +1,88 @@
+/*
+ * File name         : ~/Library/KeyBindings/DefaultKeyBinding.dict
+ * Description       : MacOS global key binding personalizations
+ * Original author(s): Michael Hucka <mhucka@caltech.edu>
+ * Organization      : California Institute of Technology
+ *
+ * Some bindings were collected from TextServices.
+ * Original (for emacs bindings) came off the net somewhere.
+ *
+ * Some of the bindings I define are nonstandard, so caveats apply.
+ *
+ * See here for more documentation:
+ * file:///Developer/Documentation/Cocoa/Conceptual/BasicEventHandling/Tasks/TextDefaultsAndBindings.html
+ * http://www.lsmason.com/articles/macosxkeybindings.html
+ * http://www.lorax.com/FreeStuff/TextExtras.html
+ * https://github.com/jrus/cocoa-text-system
+ *
+ * Incremental Search from M. McCracken
+ * http://michael-mccracken.net/blog/blosxom.pl/computers/mac/programming/iSearchPluginNSTextView.html
+ *
+ * Modifiers:
+ * ^ for Control
+ * ~ for Option
+ * $ for Shift
+ * # for numeric keypad
+ *
+ * Do the following in a shell:
+ * ----------------------------
+ * defaults write -g NSTextKillRingSize -int 20
+ * defaults write -g NSRepeatCountBinding -string "^u"
+ *
+ */
+{
+  "^ "    = (setMark:);
+  "^_"    = (undo:);
+  "^a"    = (moveToBeginningOfLine:);
+  "^e"    = (moveToEndOfLine:);
+  "^g"    = (cancelOperation:);
+  "^i"    = (indent:);
+  "^j"    = (insertLineBreak:);
+/*  "^k"    = (setMark:, moveToEndOfLine:, selectToMark:, copy:, swapWithMark:, deleteToEndOfLine:); */
+  "^l"    = (centerSelectionInVisibleArea:);
+  "^q"    = {
+            "^i" = insertTabIgnoringFieldEditor:;
+            "^h" = insertBacktab:;
+            "^j" = insertNewlineIgnoringFieldEditor:;
+            };
+  "^r"    = (ISIM_reverseIncrementalSearch:);
+  "^s"    = (ISIM_incrementalSearch:);
+  "^t"    = (transpose:);
+/* ^u is done using 'defaults write -g NSRepeatCountBinding -string "^u"' */
+  "^v"    = (pageDown:);
+  "^w"    = (selectToMark:, cut:);
+  "^x"    = {
+            "h"  = (selectAll:);
+            "k"  = (performClose:);
+            "u"  = (undo:);
+            "^f" = (openDocument:);
+            "^s" = (saveDocument:);
+            "^w" = (saveDocumentAs:);
+            "^x" = ("swapWithMark:", "centerSelectionInVisibleArea:");
+            };
+  "^y"    = (yank:);
+  "~<"    = (moveToBeginningOfDocument:);
+  "~>"    = (moveToEndOfDocument:);
+  "~{"    = (moveBackward:, moveToBeginningOfParagraph:);
+  "~}"    = (moveForward:, moveToEndOfParagraph:);
+  "~/"    = (complete:);
+  "~\\@"  = (moveWordForward:, moveWordBackward:, selectWord:);
+  "~\""   = (scrollLineDown:);
+  "~\'"   = (scrollLineUp:);
+  "~\177" = (setMark:, moveWordBackward:, selectToMark:, copy:, moveForward:, swapWithMark:, deleteWordBackward:);
+  "~b"    = (moveWordBackward:);
+  "~c"    = (moveWordForward:, moveWordBackward:, capitalizeWord:, moveBackward:, moveWordForward:);
+  "~d"    = (setMark:, moveWordForward:, selectToMark:, cut:);
+  "~f"    = (moveWordForward:);
+  "~h"    = (selectParagraph:);
+  "~i"    = (insertTab:);
+  "~l"    = (moveWordForward:, moveWordBackward:, lowercaseWord:, moveBackward:, moveWordForward:);
+  "~m"    = (moveToBeginningOfLine:, moveWordForward:, moveWordBackward:);
+  "~q"    = (selectParagraph:, doReformatService:);
+  "~r"    = (centerSelectionInVisibleArea:);
+  "~t"    = (transposeWords:);
+  "~u"    = (moveWordForward:, moveWordBackward:, uppercaseWord:, moveBackward:, moveWordForward:);
+  "~v"    = (pageUp:);
+  "~w"    = (selectToMark:, copy:);
+  "~y"    = (yankAndSelect:);
+}
