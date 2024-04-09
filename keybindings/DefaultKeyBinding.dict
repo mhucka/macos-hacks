@@ -10,7 +10,7 @@
  * Some of the bindings I define are nonstandard, so caveats apply.
  *
  * See here for more documentation:
- * file:///Developer/Documentation/Cocoa/Conceptual/BasicEventHandling/Tasks/TextDefaultsAndBindings.html
+ * https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/EventOverview/TextDefaultsBindings/TextDefaultsBindings.html
  * http://www.lsmason.com/articles/macosxkeybindings.html
  * http://www.lorax.com/FreeStuff/TextExtras.html
  * https://github.com/jrus/cocoa-text-system
