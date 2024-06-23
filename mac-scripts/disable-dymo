@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for file in {,~}/Library/{LaunchAgents,LaunchDaemons}/com.dymo*; do
+  sudo launchctl unload -w $file  > /dev/null 2>&1
+done
