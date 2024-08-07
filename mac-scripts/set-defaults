@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+# Summary: set common MacOS defaults settings that I like.
+#
+# Copyright 2024 Michael Hucka.
+# License: MIT License – see file "LICENSE" in the project website.
+# Website: https://github.com/mhucka/mac-scripts
+
+# ~~~~ Keyboard bindings ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# Set a kill ring for control-y.
+# See https://apple.stackexchange.com/questions/409816/how-do-i-get-text-key-binding-yankandselect-to-work#comment572402_409981
+defaults write -g NSTextKillRingSize -int 15
+defaults write -g NSRepeatCountBinding -string "^u"
+
+# ~~~~ Finder ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# Disable Window animations and Get Info animations (default: false)
+defaults write com.apple.finder DisableAllAnimations -bool true
+
+# Status bar.
+defaults write com.apple.finder ShowStatusBar -bool true
+
+# Full POSIX path as window title.
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool false
+
+# Allow text selection in Quick Look.
+defaults write com.apple.finder QLEnableTextSelection -bool true
+
+# ~~~~ Misc Mac settings ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# Include date and time in screenshot filenames.
+defaults write com.apple.screencapture "include-date" -bool "true"
+
+# See https://eclecticlight.co/2023/05/31/ghosts-in-the-machine-ds_store-files/.
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+# Make the Help Menu not be a floating window.
+# See https://osxdaily.com/2012/12/13/stop-the-help-viewer-window-from-hovering-over-everything-else-in-mac-os-x/.
+defaults write com.apple.helpviewer DevMode -bool true
+
+# Don't ask to make newly connected disks be TM destinations.
+defaults write com.apple.TimeMachine "DoNotOfferNewDisksForBackup" -bool "true"
