@@ -12,6 +12,12 @@
 defaults write -g NSTextKillRingSize -int 15
 defaults write -g NSRepeatCountBinding -string "^u"
 
+# ~~~~ GUI behaviors ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# Tighten the spacing of widgets in the menubar.
+defaults -currentHost write -globalDomain NSStatusItemSpacing -int 6
+defaults -currentHost write -globalDomain NSStatusItemSelectionPadding -int 6
+
 # ~~~~ Finder ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # Disable Window animations and Get Info animations (default: false)
