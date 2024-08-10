@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Summary: install brew & my normal packages.
+#
+# Copyright 2024 Michael Hucka.
+# License: MIT license – see file "LICENSE" in the project website.
+# Website: https://github.com/mhucka/macos-hacks
+
+echo "Create a directory in Google drive"
+echo "Run brew leaves > .../directory/my-brews.txt"
+echo "xargs brew install < my_brews.txt on the destination machine"
