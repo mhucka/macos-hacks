@@ -38,9 +38,7 @@
   "^ "    = (setMark:);
   "^_"    = (undo:);
   "^a"    = (moveToBeginningOfLine:);
-  "~B"    = (moveWordBackwardAndModifySelection:);
   "^e"    = (moveToEndOfLine:);
-  "~F"    = (moveWordForwardAndModifySelection:);
   "^g"    = (cancelOperation:);
   "^i"    = (indent:);
   "^j"    = (insertLineBreak:);
@@ -62,6 +60,7 @@
             "k"  = (performClose:);
             "u"  = (undo:);
             "^f" = (openDocument:);
+            "^m" = (selectToMark:);
             "^s" = (saveDocument:);
             "^w" = (saveDocumentAs:);
             "^x" = ("swapWithMark:", "centerSelectionInVisibleArea:");
@@ -77,9 +76,11 @@
   "~\'"   = (scrollLineUp:);
   "~\177" = (setMark:, moveWordBackward:, selectToMark:, copy:, moveForward:, swapWithMark:, deleteWordBackward:);
   "~b"    = (moveWordBackward:);
+  "~B"    = (moveWordBackwardAndModifySelection:);
   "~c"    = (moveWordForward:, moveWordBackward:, capitalizeWord:, moveBackward:, moveWordForward:);
   "~d"    = (setMark:, moveWordForward:, selectToMark:, cut:);
   "~f"    = (moveWordForward:);
+  "~F"    = (moveWordForwardAndModifySelection:);
   "~h"    = (selectParagraph:);
   "~i"    = (insertTab:);
   "~l"    = (moveWordForward:, moveWordBackward:, lowercaseWord:, moveBackward:, moveWordForward:);
