@@ -1,16 +1,20 @@
 /*
  * File name         : ~/Library/KeyBindings/DefaultKeyBinding.dict
- * Description       : MacOS global key binding personalizations
+ * Description       : Emacs-style MacOS global editing key bindings
  * Original author(s): Michael Hucka <mhucka@caltech.edu>
  * Organization      : California Institute of Technology
+ *
+ * The MacOS text system provides a key rebinding mechanism that users
+ * can use to redefine some keyboard shortcuts for editing in text fields.
+ * The mechanism does not work in all applications – it only works in those
+ * that use the appropriate Apple text-editing APIs – but I still find that
+ * to be indispensable.
  *
  * Some bindings were collected from TextServices.
  * Original (for emacs bindings) came off the net somewhere.
  *
  * Some of the bindings I define are nonstandard, so caveats apply.
  *
- * See here for more documentation:
- * https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/EventOverview/TextDefaultsBindings/TextDefaultsBindings.html
  * http://www.lsmason.com/articles/macosxkeybindings.html
  * http://www.lorax.com/FreeStuff/TextExtras.html
  * https://github.com/jrus/cocoa-text-system
@@ -34,7 +38,9 @@
   "^ "    = (setMark:);
   "^_"    = (undo:);
   "^a"    = (moveToBeginningOfLine:);
+  "~B"    = (moveWordBackwardAndModifySelection:);
   "^e"    = (moveToEndOfLine:);
+  "~F"    = (moveWordForwardAndModifySelection:);
   "^g"    = (cancelOperation:);
   "^i"    = (indent:);
   "^j"    = (insertLineBreak:);
@@ -50,7 +56,7 @@
   "^t"    = (transpose:);
 /* ^u is done using 'defaults write -g NSRepeatCountBinding -string "^u"' */
   "^v"    = (pageDown:);
-  "^w"    = (selectToMark:, cut:);
+  "^w"    = (selectToMark:, copy:, deleteToMark:);
   "^x"    = {
             "h"  = (selectAll:);
             "k"  = (performClose:);
