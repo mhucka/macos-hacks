@@ -80,6 +80,9 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 # Expand the print dialog by default.
 defaults write com.google.Chrome PMPrintingExpandedStateForPrint2 -bool true
 
+# Use the system print dialog by default.
+defaults write com.google.Chrome DisablePrintPreview -bool true
+
 # ~~~~ Terminal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # Enable Secure Keyboard Entry in Terminal.app.
