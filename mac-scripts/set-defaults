@@ -161,6 +161,7 @@ defaults write com.apple.SoftwareUpdate ConfigDataInstall -int 1
 
 # Set the default date format
 defaults write NSGlobalDomain AppleICUDateFormatStrings -dict-add 2 "YYYY-MM-DD"
+defaults write "Apple Global Domain" AppleFirstWeekday -dict-add gregorian 2
 
 # Disable the “Are you sure you want to open this application?” dialog.
 defaults write com.apple.LaunchServices LSQuarantine -bool false
