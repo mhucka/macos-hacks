@@ -42,7 +42,7 @@
   "^g"    = (cancelOperation:);
   "^i"    = (indent:);
   "^j"    = (insertLineBreak:);
-/*  "^k"    = (setMark:, moveToEndOfLine:, selectToMark:, copy:, swapWithMark:, deleteToEndOfLine:); */
+  "^k"    = (setMark:, moveToEndOfLine:, selectToMark:, copy:, swapWithMark:, deleteToEndOfLine:);
   "^l"    = (centerSelectionInVisibleArea:);
   "^q"    = {
             "^i" = insertTabIgnoringFieldEditor:;
