@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+# Summary: find the HomeBrew package that provides a given file.
+#
+# Portions of this code originally came from an answer posted by user GMaster
+# on 2016-08-14 to Stack Overflow at https://stackoverflow.com/a/36622898
+#
+# Copyright 2024 Michael Hucka.
+# License: MIT license – see file "LICENSE" in the project website.
+# Website: https://github.com/mhucka/macos-hacks
+
+if [[ $# -eq 0 ]]; then
+    echo "Usage: $0 /path/to/some/file"
+    exit 1
+fi
+
+declare -r brewroot=$(brew --prefix)
+
+# Homebrew packages are installed in places like /opt/homebrew/Cellar
+# and the items in places like /opt/homebrew/{bin,etc,...} are symlinks.
+
+if [[ $1 == $brewroot* ]]; then
+    declare -r filetofind=${1/#$brewroot}
+else
+    declare -r filetofind=$1
+fi
+
+echo "Warnings:"
+echo "1) this is a very slow process. It will take many minutes."
+echo "2) the test is imperfect and may not find the package."
+echo ""
+
+declare -r packages=$(brew list)
+declare -r numpackages=$(wc -w <<< "$packages" | tr -d ' ')
+
+echo "Searching through $numpackages packages."
+
+for package in "bash-completion"; do
+    if $(brew ls $package | grep -E -q $filetofind); then
+        echo "Found the file in package $package."
+        exit 0
+    fi
+done
+
+echo "File not found. This is not a final answer because the"
+echo "test used is imperfect."
